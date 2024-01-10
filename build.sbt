@@ -6,6 +6,7 @@ publish / skip := true
 lazy val root = project
   .in(file("."))
   .enablePlugins(ScalaJSPlugin)
+//  .enablePlugins(ScalablyTypedConverterPlugin)
   .settings(
     name := "sjs-template",
     version := "0.0.1",
@@ -17,6 +18,9 @@ lazy val root = project
 //    libraryDependencies += "io.github.cquiroz" %%% "scala-java-time" % "2.5.0",
     libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.17" % "test",
 //    libraryDependencies += "com.lihaoyi" %%% "pprint" % "0.8.1" % "test",
+//    Compile / npmDependencies ++= Seq(
+//      "socket.io" -> "4.7.3",
+//    ),
     jsEnv := new org.scalajs.jsenv.nodejs.NodeJSEnv(),
     Test / scalaJSUseMainModuleInitializer := true,
     Test / scalaJSUseTestModuleInitializer := false,
