@@ -10,7 +10,7 @@ lazy val scalajs_template = project
   .settings(
     name             := "scalajs-template",
     version          := "0.0.1",
-    scalaVersion     := "3.5.2",
+    scalaVersion     := "3.6.2",
     organization     := "io.github.edadma",
     githubOwner      := "edadma",
     githubRepository := name.value,
