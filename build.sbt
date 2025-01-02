@@ -14,7 +14,9 @@ lazy val scalajs_template = project
     scalaVersion := "3.6.2",
     organization := "io.github.edadma",
 //    libraryDependencies += "io.github.cquiroz" %%% "scala-java-time" % "2.6.0",
-    libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.19" % "test",
+    libraryDependencies ++= Seq(
+//    "org.scalatest" %%% "scalatest" % "3.2.19" % "test",
+    ),
 //    libraryDependencies += "com.lihaoyi" %%% "pprint" % "0.9.0" % "test",
     jsEnv                                  := new org.scalajs.jsenv.nodejs.NodeJSEnv(),
     Test / scalaJSUseMainModuleInitializer := true,
