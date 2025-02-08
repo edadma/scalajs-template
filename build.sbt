@@ -11,7 +11,7 @@ lazy val scalajs_template = project
   .settings(
     name         := "scalajs-template",
     version      := "0.0.1",
-    scalaVersion := "3.6.2",
+    scalaVersion := "3.6.3",
     organization := "io.github.edadma",
 //    libraryDependencies += "io.github.cquiroz" %%% "scala-java-time" % "2.6.0",
     libraryDependencies ++= Seq(
